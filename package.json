@@ -1,0 +1,15 @@
+{
+  "name": "micro-suite",
+  "version": "0.0.1",
+  "description": "Small unit testing suite for nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1",
+    "test": "node index.js"
+  },
+  "author": "William Higgs",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "6.1.0"
+  }
+}
