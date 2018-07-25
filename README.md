@@ -13,7 +13,7 @@ ____
 ### Setup
 At the top of your test files:
 ```javascript
-const {describe, it, expect} = require( "./micro-suite/Test.js");
+const {describe, it, expect} = require('./micro-suite/test.js');
 //and also require() the modules you are testing
 ```
 and then just import your test files into your index.js to automatially initiate the tests.
