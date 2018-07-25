@@ -4,7 +4,7 @@
   "description": "Small unit testing suite for nodeJS",
   "main": "index.js",
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Error: no start specified\" && exit 1",
     "test": "node index.js"
   },
   "author": "William Higgs",
