@@ -27,6 +27,8 @@ ____
 2. notToBe - Type and contents checking and returns false for matching items.
 3. toBeMoreThan - Checks two number types and returns true for more than.
 4. toBeLessThan - Checks two number types and return true for less than.
+5. toInclude - Checks if an array or string contains a value. Cannot check number types.
+6. toNotInclude - Check if an array or string does not contain a value. Cannot check number types.
 _____
 ### Mock Data
 you can declare variables and run code scoped within the test to imitate data and state:
