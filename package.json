@@ -2,14 +2,14 @@
   "name": "micro-suite",
   "version": "0.0.1",
   "description": "Small unit testing suite for nodeJS",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "bin": {
     "micro-suite": "./bin/micro-suite"
   },
   "preferGlobal": true,
   "scripts": {
     "start": "echo \"Error: no start specified\" && exit 1",
-    "test": "node index.js"
+    "test": "node lib/index.js"
   },
   "author": "William Higgs",
   "license": "ISC",
