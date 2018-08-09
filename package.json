@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Small unit testing suite for nodeJS",
   "main": "index.js",
+  "bin": "./bin/micro-suite",
   "scripts": {
     "start": "echo \"Error: no start specified\" && exit 1",
     "test": "node index.js"
