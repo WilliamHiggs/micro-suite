@@ -1,5 +1,16 @@
 #!/usr/bin/env sh
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+basedir=`dirname "$0"`
 
-node "$DIR"/index "$@"
+case `uname` in
+    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
+esac
+
+if [ -x "$basedir/node" ]; then
+  "$basedir/node"  "$basedir/node_modules/micro-suite/bin/micro-suite" "$@"
+  ret=$?
+else 
+  node  "$basedir/node_modules/micro-suite/bin/micro-suite" "$@"
+  ret=$?
+fi
+exit $ret
