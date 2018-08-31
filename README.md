@@ -8,6 +8,7 @@ describe("function to make a + b = c", () => {
   it("should make 1+2=3", () => {
     expect(add(1, 2)).toBe(3);
   });
+});
 ```
 ____
 ### Setup
