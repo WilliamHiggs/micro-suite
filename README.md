@@ -12,12 +12,17 @@ describe("function to make a + b = c", () => {
 ```
 ____
 ### Setup
-At the top of your test files:
-```javascript
-const {describe, it, expect} = require('./micro-suite/test.js');
-//and also require() the modules you are testing
+No need to require('./test')!
+```bash
+npm install micro-suite -g
 ```
-and then just import your test files into your index.js to automatially initiate the tests.
+in your package.json:
+```javascript
+"scripts": {
+  "test": "node micro-suite ./<your test folder> .test"
+}
+```
+all your files in your test directory ending in .test.js will be run.
 
 ! micro-suite will be on NPM for install soon !
 ____
