@@ -22,7 +22,7 @@ function fromDir(startPath, filter) {
     } else if (filename.indexOf(filter) >= 0) {
       //var nodeModuleName = `./${filename.replace(/\\/g, "/")}`;
       fs.readFile(filename, {encoding: 'utf-8'}, function(err, data) {
-        const {describe, it, expect} = require('test.js');
+        const {describe, it, expect} = require('./lib/test.js');
         eval(data);
       });
     }
