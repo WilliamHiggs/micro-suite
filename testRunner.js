@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 var path = require("path"),
   fs = require("fs"),
-  args = require("./File.js");
+  args = require("./micro-suite.js");
 
 function fromDir(startPath, filter) {
 
