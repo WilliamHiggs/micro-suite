@@ -19,7 +19,7 @@ npm install micro-suite -g
 in your package.json:
 ```javascript
 "scripts": {
-  "test": "node micro-suite ./<your test folder> .test"
+  "test": "micro-suite ./<your test folder> .test"
 }
 ```
 all your files in your test directory ending in .test.js will be run.
