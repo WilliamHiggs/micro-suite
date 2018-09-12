@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 var path = require("path"),
   fs = require("fs"),
-  args = require("./File.js");
+  args = require("./micro-suite.js");
 
 function fromDir(startPath, filter) {
 
@@ -20,7 +22,7 @@ function fromDir(startPath, filter) {
     } else if (filename.indexOf(filter) >= 0) {
       //var nodeModuleName = `./${filename.replace(/\\/g, "/")}`;
       fs.readFile(filename, {encoding: 'utf-8'}, function(err, data) {
-        const {describe, it, expect} = require('test.js');
+        const {describe, it, expect} = require('./lib/test.js');
         eval(data);
       });
     }
