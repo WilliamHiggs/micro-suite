@@ -12,9 +12,13 @@ describe("function to make a + b = c", () => {
 ```
 ____
 ### Setup
-No need to require('./test')!
+in your terminal:
 ```bash
 npm install micro-suite -g
+```
+in your test files:
+```javascript
+const { describe, it, expect } = require('micro-suite');
 ```
 in your package.json:
 ```javascript
